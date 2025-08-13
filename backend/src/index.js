@@ -20,7 +20,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "chat-h5sxcamic-charchit-agarwals-projects.vercel.app",
+    ],
     credentials: true,
   })
 );
