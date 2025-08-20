@@ -26,6 +26,8 @@ QuickCon is a real-time chat application that enables users to create accounts, 
 ---
 
 ## 📂 Project Structure
+---
+
 ChatApp/
 │-- backend/ # Node.js + Express backend
 │ │-- src/
