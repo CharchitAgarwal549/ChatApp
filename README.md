@@ -26,37 +26,39 @@ QuickCon is a real-time chat application that enables users to create accounts, 
 ---
 
 ## 📂 Project Structure
----
 
+```plaintext
 ChatApp/
-│-- backend/ # Node.js + Express backend
-│ │-- src/
-│ │ │-- controllers/ # Business logic for routes
-│ │ │-- lib/ # Helper functions/utilities
-│ │ │-- middleware/ # Authentication & error handling
-│ │ │-- models/ # MongoDB schemas (User, Messages, Chats)
-│ │ │-- routes/ # API routes
-│ │ │-- seeds/ # Initial database seeding
-│ │ └-- index.js # App entry point
-│ │
-│ │-- package.json
-│ │-- package-lock.json
+│-- backend/                 # Node.js + Express backend
+│   └-- src/
+│       ├-- controllers/     # Business logic for routes
+│       ├-- lib/             # Helper functions/utilities
+│       ├-- middleware/      # Authentication & error handling
+│       ├-- models/          # MongoDB schemas (User, Messages, Chats)
+│       ├-- routes/          # API routes
+│       ├-- seeds/           # Initial database seeding
+│       └-- index.js         # App entry point
 │
-│-- frontend/ # React frontend
-│ │-- package.json
+│   ├-- package.json
+│   └-- package-lock.json
+│
+│-- frontend/                # React frontend
+│   └-- package.json
 │
 │-- .gitignore
-│-- package.json # Root config
+│-- package.json             # Root config
+````
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/CharchitAgarwal549/ChatApp.git
 cd ChatApp
-````
+```
 
 ### 2. Setup Backend
 
@@ -76,9 +78,9 @@ npm run dev
 
 ### 4. Environment Variables
 
-Create a `.env` file inside the `server/` folder with the following keys:
+Create a `.env` file inside the `backend/` folder with the following keys:
 
-```
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=5000
@@ -93,10 +95,10 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
 ## 🎯 Future Improvements
 
-* ✅ Group chats and broadcasting.
-* ✅ Typing indicators and read receipts.
-* ✅ Push notifications for new messages.
-* ✅ End-to-end encryption for better security.
+* ✅ Group chats and broadcasting
+* ✅ Typing indicators and read receipts
+* ✅ Push notifications for new messages
+* ✅ End-to-end encryption for better security
 
 ---
 
